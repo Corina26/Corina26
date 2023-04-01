@@ -1,0 +1,70 @@
+
+List can be tought of as containers of python. Unlike the other data types, 
+we can store multiple variables in a single list object. 
+In the single list object we can have same or different data types. 
+There is no restriction on using any data type in a list. 
+
+List objects are mutable(changeable) which means that they can change their value
+without a need to reassign. 
+
+In order to create a list we should follow the syntax below: 
+
+name_of_list = [value1,value2,value3,etc.]
+
+
+Items in a list object are indexed, so we can use index numbers to access items. 
+
+# Let's create a simple list and access the third element from that list. 
+#indexing  0  1    2     3
+list    = [1,"t",False,True]
+
+print("The third item from the list above is", list[2]) # -> False
+
+
+# Same as string objects, list objects use negative indexing. 
+
+#neg. ind. -4  -3   -2   -1
+list    =  [1,"t",False,True]
+print("The second item from the list is",list[-3]) # "t"
+
+
+# Changing individual elements on list 
+
+We can't change individual elements on the string.
+
+s = "Python"
+# I want to change first letter to J
+s[0] = "J" 
+TypeError: 'str' object does not support item assignment
+
+We can do this concept in lists.
+
+
+
+
+What is the difference between append and insert methods? 
+
+Append method takes only one parameter as a new value, and adds 
+that value at the end of the list. 
+On the other hand, insert method will take two parameters. 
+First one is index number and second one is the new value. 
+It adds new value to specified index WITHOUT REPLACING any existing element.
+
+
+
+
+What is the difference between remove and pop method? 
+
+remove method takes one parameter as an existing value from list then
+removes that first occurence of that value from the list. 
+
+pop method also takes one parameter but as an index number. Then 
+removes element from specified index number. If no parameter 
+used for pop method, pop method will REMOVE THE LAST ELEMENT in the list.
+
+l1 = ["Tech", "AI", 3.14,2.7,2023]
+
+# I want to change first element of list with "Programming"
+
+l1[0] = "Programming"
+print(l1) # ['Programming', 'AI', 3.14, 2.7, 2023]
